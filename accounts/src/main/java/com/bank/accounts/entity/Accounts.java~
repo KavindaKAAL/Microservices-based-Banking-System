@@ -1,0 +1,16 @@
+package com.bank.accounts.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.*;
+
+@Entity
+@Getter @Setter @ToString
+@AllArgsConstructor @NoArgsConstructor
+public class Accounts extends BaseEntity {
+    public Long customerId;
+    @Id
+    public Long accountNumber;
+    public String accountType;
+    public String branchAddress;
+}
